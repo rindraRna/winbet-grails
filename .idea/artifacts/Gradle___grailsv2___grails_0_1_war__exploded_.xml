@@ -196,12 +196,12 @@
           <element id="library" level="project" name="Gradle: com.github.stephenc.jcip:jcip-annotations:1.0-1" />
           <element id="library" level="project" name="Gradle: net.minidev:json-smart:2.3" />
           <element id="library" level="project" name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.55" />
+          <element id="library" level="project" name="Gradle: commons-io:commons-io:2.2" />
           <element id="library" level="project" name="Gradle: com.github.scribejava:scribejava-core:3.3.0" />
           <element id="library" level="project" name="Gradle: joda-time:joda-time:2.10.6" />
           <element id="library" level="project" name="Gradle: net.minidev:accessors-smart:1.2" />
           <element id="library" level="project" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.55" />
           <element id="library" level="project" name="Gradle: org.ow2.asm:asm:5.0.4" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.2/83b5b8a7ba1c08f9e8c8ff2373724e33d3c1e22a/commons-io-2.2.jar" />
         </element>
       </element>
     </root>
