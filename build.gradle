@@ -113,9 +113,7 @@ assets {
     minifyCss = true
 }
 
-task stage() {
-    dependsOn clean, war
-}
+task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean
 
 task copyToLib(type: Copy) {
@@ -124,4 +122,11 @@ task copyToLib(type: Copy) {
 }
 
 stage.dependsOn(copyToLib)
+
+gradle.taskGraph.whenReady {
+    taskGraph ->
+        if (taskGraph.hasTask(stage)) {
+            test.enabled = false
+        }
+}
 
