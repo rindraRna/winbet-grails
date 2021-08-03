@@ -123,7 +123,7 @@ environments:
             password: "RamiandrisoaMI202101"
     test:
         dataSource:
-            dbCreate: update
+            dbCreate: create-drop
             url: jdbc:oracle:thin:@144.21.67.201:1521/pdbitu.631174089.oraclecloud.internal
             driverClassName: oracle.jdbc.OracleDriver
             dialect: org.hibernate.dialect.Oracle10gDialect
@@ -131,7 +131,7 @@ environments:
             password: "RamiandrisoaMI202101"
     production:
         dataSource:
-            dbCreate: update
+            dbCreate: create-drop
             url: jdbc:oracle:thin:@144.21.67.201:1521/pdbitu.631174089.oraclecloud.internal
             driverClassName: oracle.jdbc.OracleDriver
             dialect: org.hibernate.dialect.Oracle10gDialect
@@ -147,7 +147,7 @@ environments:
                 maxAge: 600000
                 timeBetweenEvictionRunsMillis: 5000
                 minEvictableIdleTimeMillis: 60000
-                validationQuery: SELECT 1
+                validationQuery: SELECT 1 FROM dual
                 validationQueryTimeout: 3
                 validationInterval: 15000
                 testOnBorrow: true
