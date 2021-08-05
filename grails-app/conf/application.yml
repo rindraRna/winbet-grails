@@ -108,35 +108,23 @@ hibernate:
 dataSource:
     pooled: true
     jmxExport: true
-    driverClassName: org.h2.Driver
-    username: sa
-    password: ''
+    driverClassName: oracle.jdbc.OracleDriver
+    username: RAMIANDRISOAMI2021
+    password: RamiandrisoaMI202101
 
 environments:
     development:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:oracle:thin:@//144.21.67.201:1521/pdbitu.631174089.oraclecloud.internal
-            driverClassName: oracle.jdbc.OracleDriver
-            dialect: org.hibernate.dialect.Oracle10gDialect
-            username: "RAMIANDRISOAMI2021"
-            password: "RamiandrisoaMI202101"
+            url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=144.21.67.201)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=PDBITU.631174089.oraclecloud.internal)))
     test:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:oracle:thin:@//144.21.67.201:1521/pdbitu.631174089.oraclecloud.internal
-            driverClassName: oracle.jdbc.OracleDriver
-            dialect: org.hibernate.dialect.Oracle10gDialect
-            username: "RAMIANDRISOAMI2021"
-            password: "RamiandrisoaMI202101"
+            url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=144.21.67.201)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=PDBITU.631174089.oraclecloud.internal)))
     production:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:oracle:thin:@//144.21.67.201:1521/pdbitu.631174089.oraclecloud.internal
-            driverClassName: oracle.jdbc.OracleDriver
-            dialect: org.hibernate.dialect.Oracle10gDialect
-            username: "RAMIANDRISOAMI2021"
-            password: "RamiandrisoaMI202101"
+            url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=144.21.67.201)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=PDBITU.631174089.oraclecloud.internal)))
             properties:
                 jmxEnabled: true
                 initialSize: 5
@@ -155,6 +143,3 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
-
-server:
-    port: 22252
