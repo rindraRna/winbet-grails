@@ -109,6 +109,7 @@ dataSource:
     pooled: true
     jmxExport: true
     driverClassName: oracle.jdbc.OracleDriver
+    dialect : "org.hibernate.dialect.Oracle10gDialect"
     username: RAMIANDRISOAMI2021
     password: RamiandrisoaMI202101
 
